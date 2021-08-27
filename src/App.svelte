@@ -9,7 +9,7 @@
 	We have different font sizes too!
 </h2>
 
-<p>Taurivim will hopefull be awesome</p>
+<p>Taurivim will hopefully be awesome</p>
 
 <style>
 	main {
