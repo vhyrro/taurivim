@@ -1,15 +1,17 @@
+<script lang="ts">
+	import { invoke } from "@tauri-apps/api/tauri";
+
+	// Register the Neovim UI
+	const print_window_size = () => {
+		invoke("register_ui");
+	}
+</script>
+
 <main>
-	<h1>Hello!</h1>
+	<h1 on:click={print_window_size}>Hello!</h1>
 	<p>This is a test just to make sure everything works</p>
+	<p>Click the Hello heading to print the current window dimensions from Rust!</p>
 </main>
-<br>
-<br>
-
-<h2>
-	We have different font sizes too!
-</h2>
-
-<p>Taurivim will hopefully be awesome</p>
 
 <style>
 	main {
